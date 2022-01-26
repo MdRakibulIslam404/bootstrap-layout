@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        h1::before {
+            content: "Hello ";
+            color: darkgoldenrod;
+        }
+
+        h1::after {
+            content: " Gello";
+            color: rgb(255, 2, 2);
+        }
+
+        blockquote::before {
+            content: open-quote;
+            font-size: 2em;
+            color: magenta;
+        }
+
+        blockquote::after {
+            content: close-quote;
+            font-size: 2em;
+            color: magenta;
+        }
+
+        .section-title {
+            display: inline-block;
+        }
+
+        .section-title::after,
+        .section-title:hover::before {
+            content: "";
+            display: block;
+            background-color: darkmagenta;
+            height: 2px;
+            width: 90%;
+        }
+
+        .asterisk-symbol::after {
+            content: "*";
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>having fun with pseudo pseudo bhai bon</h1>
+    <h1>having fun with bondhu bandupi</h1>
+
+    <section>
+        <h2 class="section-title">best quotes</h2>
+        <blockquote>The purpose of our lives is to be happy.</blockquote>
+        <blockquote>Life is what happens when youre busy making other plans.</blockquote>
+        <blockquote>The way I see it, if you want the rainbow, you gotta put up with the rain.</blockquote>
+    </section>
+
+    <section>
+        <p>Name: <input type="name" name="" id=""></p>
+        <p><label class="asterisk-symbol" for="">Email</label><input type="email" name="" id=""></p>
+        <p>Password: <input type="password" name="" id=""></p>
+        <p><label class="asterisk-symbol" for="">Girlfriend name</label><input type="name" name="" id=""></p>
+    </section>
+</body>
+
+</html>
